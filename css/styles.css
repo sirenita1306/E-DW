@@ -1,0 +1,42 @@
+/**********TAG selectors**********/
+
+
+/**********CLASS selectors**********/
+
+.menu{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right :auto;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between;
+  }
+  
+  .box div {
+    width: 100px;
+    height: 100px;
+  }
+
+.logo{
+    padding-top :15%;
+    padding-left: 15%;
+    width: 250%;
+}
+
+.grow img{
+    transition: 1s ease;
+    }
+    
+    .grow img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+    
+
+/**********ID selectors**********/
