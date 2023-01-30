@@ -1,5 +1,19 @@
 /**********TAG selectors**********/
+body{
+  font-family: 'Lora', serif;
+}
 
+h1{
+  font-family: 'Amita', cursive;
+}
+
+h2{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h3{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
 /**********CLASS selectors**********/
 
