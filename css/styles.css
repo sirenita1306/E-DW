@@ -1,14 +1,26 @@
 /**********TAG selectors**********/
 body{
   font-family: 'Lora', serif;
+  background-color: #FFF199;
+  margin:0;
 }
 
 h1{
   font-family: 'Amita', cursive;
+  font-size: 4.375rem; /*Taille dynamique : 100% = 16px. Pour 70px ==> 70/16=437.5 ou utiliser
+                      rem ==> 1em=16px pour 70px ==> 70/16=4.375rem : "r" correspond à root
+                      donc même si on modifie la taille du texte dans body par, la taille h1
+                      ne sera pas modifiée*/
+  margin : 50px auto 0 auto;
+  text-align: center;
+  display: inline-block;
 }
 
 h2{
   font-family: 'PT Sans Narrow', sans-serif;
+  font-size:2.5rem;
+  text-align: center;
+  display: block;
 }
 
 h3{
@@ -17,15 +29,10 @@ h3{
 
 /**********CLASS selectors**********/
 
-.menu{
-    margin-top: auto;
-    margin-left: 200px;
-}
-
 .box {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    height: 200px;
     align-content: space-between;
   }
   
@@ -37,7 +44,7 @@ h3{
 .logo{
     padding-top :15%;
     padding-left: 15%;
-    width: 250%;
+    width: 200%;
 }
 
 .grow img{
@@ -45,11 +52,56 @@ h3{
     }
     
     .grow img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     transition: 1s ease;
     }
-    
+
+.top-container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  align-content: space-between;
+}
+
+.middle-container{
+
+}
+
+.bottom-container{
+
+}
+
+.profile{
+
+}
+
+.profile-img{
+  display: block;
+  margin:100px auto 0 auto;
+  width: 150px;
+  height: 150px;
+}
+  
+.skills{
+
+}
+
+.skill-row{
+
+}
+
+.contact-me{
+
+}
+
+.btn{
+
+}
+
+.footer-link{
+
+}
 
 /**********ID selectors**********/
