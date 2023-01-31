@@ -1,8 +1,9 @@
-/**********TAG selectors**********/
+
 body{
   font-family: 'Lora', serif;
-  background-color: #FFF199;
+  background-color: #FAECD6;
   margin:0;
+  font-size:larger;
 }
 
 h1{
@@ -11,97 +12,129 @@ h1{
                       rem ==> 1em=16px pour 70px ==> 70/16=4.375rem : "r" correspond à root
                       donc même si on modifie la taille du texte dans body par, la taille h1
                       ne sera pas modifiée*/
-  margin : 50px auto 0 auto;
-  text-align: center;
-  display: inline-block;
+  margin: 0px auto 0 auto;
+  text-align: left;
+  /*display: inline-block;*/
+  color: #820000;
 }
 
 h2{
   font-family: 'PT Sans Narrow', sans-serif;
   font-size:2.5rem;
-  text-align: center;
-  display: block;
+  text-align: left;
+  /*display: inline-block;*/
+  margin: 0px auto 15px auto;
+  color:#4E6C50;
 }
 
 h3{
   font-family: 'PT Sans Narrow', sans-serif;
+  color:#4E6C50;
 }
 
-/**********CLASS selectors**********/
+hr{
+  border-top: 5px dotted #820000;
+  width: 450px;
+  margin-left: 150px;
+}
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    height: 200px;
-    align-content: space-between;
+.titre_h1{
+  font-family: 'Amita', cursive;
+  font-size: 2.5rem; /*Taille dynamique : 100% = 16px. Pour 70px ==> 70/16=437.5 ou utiliser
+                      rem ==> 1em=16px pour 70px ==> 70/16=4.375rem : "r" correspond à root
+                      donc même si on modifie la taille du texte dans body par, la taille h1
+                      ne sera pas modifiée*/
+  margin: 0px auto 0 20px;
+  text-align: left;
+  display: inline-block;
+  color: #820000;
+}
+
+.titre_h2{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:1.25rem;
+  text-align: left;
+  display: inline-block;
+  margin: 0px auto 0 20px;
+  color:#4E6C50;
+}
+
+/*Navigation*/
+.header {
+  overflow: hidden;
+  background-color: #F2DEBA;
+  padding: 20px 10px;
+  border-bottom: 2mm ridge #820000;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #FAECD6;
+  color: black;
+}
+
+.header a.active {
+  background-color: #820000;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-right: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
   
-  .box div {
-    width: 100px;
-    height: 100px;
+  .header-right {
+    float: none;
   }
+}
 
 .logo{
-    padding-top :15%;
-    padding-left: 15%;
-    width: 200%;
+  font-family: 'Amita', cursive;
+  font-size: 2.5rem;
+  color: #820000;
 }
 
-.grow img{
-    transition: 1s ease;
-    }
-    
-    .grow img:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 1s ease;
-    }
+.responsive-logo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
 
-.top-container{
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin:auto;
+}
+
+.container1{
   display: flex;
-  flex-wrap: wrap;
-  height: 200px;
-  align-content: space-between;
-}
-
-.middle-container{
+  gap: 10px;
+  margin : 25px auto;
+  width: 500px;
+  height: auto;
 
 }
-
-.bottom-container{
-
-}
-
-.profile{
-
-}
-
-.profile-img{
-  display: block;
-  margin:100px auto 0 auto;
-  width: 150px;
-  height: 150px;
-}
-  
-.skills{
-
-}
-
-.skill-row{
-
-}
-
-.contact-me{
-
-}
-
-.btn{
-
-}
-
-.footer-link{
-
-}
-
-/**********ID selectors**********/
