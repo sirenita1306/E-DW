@@ -129,6 +129,7 @@ hr{
   border-radius: 50%;
   margin:auto;
   filter: drop-shadow(8px 8px 10px gray);
+  
 }
 
 .container1{
@@ -137,24 +138,116 @@ hr{
   margin : 50px auto;
   padding-left: 20px;
   padding-right: 20px;
-  width: 500px;
+  width: 600px;
   height: auto;
   background-color:#F2DEBA;
   filter: drop-shadow(8px 8px 10px gray);
+  position: relative;
+  animation-name: slideleft;
   animation-duration: 3s;
-  animation-name:slidein;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-timing-function: forwards;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@keyframes slideleft {
+0%   {right:-500px;}
+100% {right:0;}
+}
+
+.container2{
+  display: flex;
+  gap: 10px;
+  margin : 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 600px;
+  height: auto;
+  background-color:#F2DEBA;
+  filter: drop-shadow(8px 8px 10px gray);
+  position: relative;
+  animation-name: slideright;
+  animation-duration: 3s;
+  animation-timing-function: forwards;
+}
+
+@keyframes slideright {
+0%   {right:500px;}
+100% {right:0;}
+}
+
+/* MENTIONS LEGALES */
+#mentionslegales{
+  width: 45%;
+  margin: 15px auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+  #mentionslegales p, #mentionslegales a {
+      font-size: 13px;
+      margin: auto;
+      text-align: center;
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+  #mentionslegales a {
+      text-decoration: none;
+      transition: all 0.5s ease;
+      font-weight: 500;
+  }
+
+      #mentionslegales a:hover {
+          color: #5B5D70;
+      }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+/* Partners */
+.partners{
+  /*display: flex;
+  flex-direction: column;
+  margin: auto 10px;*/
+  display: flex;
+  gap: 10px;
+  margin : 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 300px;
+  height: auto;
 }
+
+.partners h2{
+  margin: auto;
 }
+
+.partners div{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 5px;
+  width: fit-content;
+  /*display: flex;
+  gap: 10px;
+  margin : 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 60px;
+  height: auto;*/
+}
+
+.partners div a{
+  margin: auto 10px;
+  width: 35px;
+}
+
+  .partners div a img {
+      transition: all 0.8s ease;
+      transform: scale(1);
+  }
+
+      .partners div a img:hover {
+          transform: scale(1.1) perspective(1px);
+      }
