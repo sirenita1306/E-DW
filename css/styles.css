@@ -128,13 +128,33 @@ hr{
   height: 50px;
   border-radius: 50%;
   margin:auto;
+  filter: drop-shadow(8px 8px 10px gray);
 }
 
 .container1{
   display: flex;
   gap: 10px;
-  margin : 25px auto;
+  margin : 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 500px;
   height: auto;
+  background-color:#F2DEBA;
+  filter: drop-shadow(8px 8px 10px gray);
+  animation-duration: 3s;
+  animation-name:slidein;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+}
 }
