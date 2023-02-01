@@ -8,7 +8,7 @@ body{
 
 h1{
   font-family: 'Amita', cursive;
-  font-size: 4.375rem; /*Taille dynamique : 100% = 16px. Pour 70px ==> 70/16=437.5 ou utiliser
+  font-size: 3.125rem; /*Taille dynamique : 100% = 16px. Pour 70px ==> 70/16=437.5 ou utiliser
                       rem ==> 1em=16px pour 70px ==> 70/16=4.375rem : "r" correspond à root
                       donc même si on modifie la taille du texte dans body par, la taille h1
                       ne sera pas modifiée*/
@@ -16,6 +16,7 @@ h1{
   text-align: left;
   /*display: inline-block;*/
   color: #820000;
+  padding-left: 10px;
 }
 
 h2{
@@ -36,6 +37,15 @@ hr{
   border-top: 5px dotted #820000;
   width: 450px;
   margin-left: 150px;
+}
+
+a{
+  color: #820000;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #4E6C50;
 }
 
 .titre_h1{
@@ -76,6 +86,7 @@ hr{
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  display: block;/*menu fixé */
 }
 
 .header a.logo {
@@ -129,13 +140,18 @@ hr{
   border-radius: 50%;
   margin:auto;
   filter: drop-shadow(8px 8px 10px gray);
-  
+}
+
+/*Presentation*/
+
+.general{
+  margin-top: 50px;
 }
 
 .container1{
   display: flex;
   gap: 10px;
-  margin : 50px auto;
+  margin : 30px auto;
   padding-left: 20px;
   padding-right: 20px;
   width: 600px;
@@ -174,80 +190,31 @@ hr{
 100% {right:0;}
 }
 
-/* MENTIONS LEGALES */
-#mentionslegales{
-  width: 45%;
-  margin: 15px auto;
-  margin-top: 25px;
-  display: flex;
-  flex-direction: row;
+/*Projets*/
+.presentation-projets{
+  margin-top: 100px;
 }
 
-  #mentionslegales p, #mentionslegales a {
-      font-size: 13px;
-      margin: auto;
-      text-align: center;
-  }
+.projets{
+  text-align: center;
+}
 
-  #mentionslegales a {
-      text-decoration: none;
-      transition: all 0.5s ease;
-      font-weight: 500;
-  }
+/* MENTIONS LEGALES */
+.footer{
+  margin-top: 300px;
+  margin-bottom: 30px;
+  border-top: 2mm ridge #820000;
+  display: flex;
+  justify-content: center;
+}
 
-      #mentionslegales a:hover {
-          color: #5B5D70;
-      }
-
-  footer{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
+.inter-footer{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 10px;
+  font-size: smaller;
+  margin-top: 30px;
+}
 
 /* Partners */
-.partners{
-  /*display: flex;
-  flex-direction: column;
-  margin: auto 10px;*/
-  display: flex;
-  gap: 10px;
-  margin : 50px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 300px;
-  height: auto;
-}
-
-.partners h2{
-  margin: auto;
-}
-
-.partners div{
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 5px;
-  width: fit-content;
-  /*display: flex;
-  gap: 10px;
-  margin : 50px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 60px;
-  height: auto;*/
-}
-
-.partners div a{
-  margin: auto 10px;
-  width: 35px;
-}
-
-  .partners div a img {
-      transition: all 0.8s ease;
-      transform: scale(1);
-  }
-
-      .partners div a img:hover {
-          transform: scale(1.1) perspective(1px);
-      }
