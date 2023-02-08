@@ -22,6 +22,18 @@ h1{
   
 }
 
+.nav-link{
+    color:#A4A48C;
+}
+
+.nav-link:hover{
+    color:#DDC38B;
+}
+
+.nav-link:active{
+    color:#FAECD6;
+}
+
 .edw_title{
     width: 250px;
     height: auto;
