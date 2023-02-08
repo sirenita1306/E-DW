@@ -1,9 +1,18 @@
+body{
+    font-family: "Montserrat";
+}
+
+.navbar{
+    background-color:#820000;
+}
+
 #title{
     background-color: #F2DEBA;
+    color:#820000;
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 1% 5%;
 }
 
 h1{
@@ -13,18 +22,24 @@ h1{
     font-weight: 900;
 }
 
-.container_header{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  
+/*Navbar*/
+
+.navbar{
+    padding: 0 0 1.5625rem;
+}
+
+.nav-item{
+    padding:0 18px;
 }
 
 .nav-link{
     color:#A4A48C;
+    font-family: "Montserrat-Light";
+    font-size: 1.5625rem;
 }
+/*Taille dynamique : 100% = 16px. Pour 70px ==> 70/16=437.5 ou utiliser rem ==> 1em=16px 
+pour 70px ==> 70/16=4.375rem : "r" correspond à root donc même si on modifie la taille du
+texte dans body par, la taille h1 ne sera pas modifiée*/
 
 .nav-link:hover{
     color:#DDC38B;
@@ -34,12 +49,14 @@ h1{
     color:#FAECD6;
 }
 
+.logo_edw{
+    width:9.375rem;
+    height:auto;
+    margin:1.5625rem 0 0 1.25rem;
+}
+
 .edw_title{
     width: 250px;
     height: auto;
-    margin-top: 25px;
-}
-
-.img_reso{
-    margin: 30px 0 20px 80px;
+    /*margin-top: 25px;*/
 }
