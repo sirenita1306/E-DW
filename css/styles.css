@@ -2,30 +2,15 @@ body{
     font-family: "Montserrat";
 }
 
-.navbar{
-    background-color:#820000;
-}
-
-#title{
-    background-color: #F2DEBA;
-    color:#820000;
-}
-
 .container-fluid{
     padding: 1% 5%;
-}
-
-h1{
-    font-family: 'Montserrat-black, sans-serif';
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
 }
 
 /*Navbar*/
 
 .navbar{
     padding: 0 0 1.5625rem;
+    background-color:#820000;
 }
 
 .nav-item{
@@ -49,14 +34,49 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
     color:#FAECD6;
 }
 
+/*Logo*/
+
 .logo_edw{
     width:9.375rem;
     height:auto;
     margin:1.5625rem 0 0 1.25rem;
 }
 
+/*Title*/
+
+#title{
+    background-color: #FAECD6;
+    color:#820000;
+}
+
+.title-h1{
+    font-family: 'Montserrat-black, sans-serif';
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin-top: 1.875rem;
+}
+
+
 .edw_title{
     width: 250px;
     height: auto;
     /*margin-top: 25px;*/
+}
+
+/*Title Button*/
+
+.btn-style-1{
+    margin:5% 3% 0 12%;
+}
+
+.btn-style-2{
+    margin:5% 3% 0 3%;
+}
+
+/*Title image*/
+
+.title-img{
+    width:60%;
+    margin:40px auto 40px 60px;
 }
