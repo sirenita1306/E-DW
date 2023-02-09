@@ -80,3 +80,30 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
     width:60%;
     margin:40px auto 40px 60px;
 }
+
+/*Features*/
+
+#features{
+    padding: 7% 15%;
+}
+.features-box{
+    padding: 5%;
+}
+
+.features-icons{
+    font-size: 60px;
+    color:#820000;
+}
+
+.features-icons:hover{
+    color:#4E6C50;
+}
+
+.h3-features{
+    font-family: "Montserrat-Bold";
+    font-weight: 600;
+}
+
+.p-features{
+    color:#4E6C50;
+}
