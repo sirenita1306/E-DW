@@ -2,6 +2,12 @@ body{
     font-family: "Montserrat";
 }
 
+h2{
+    font-family:"Montserrat-Bold";
+    font-size:3rem;
+    line-height:1.5;
+    padding-top:3%;
+}
 .container-fluid{
     padding: 1% 5%;
 }
@@ -10,7 +16,8 @@ body{
 
 .navbar{
     padding: 0 0 1.5625rem;
-    background-color:#820000;
+    /*background-color:#820000;*/
+    z-index:1;
 }
 
 .nav-item{
@@ -18,7 +25,7 @@ body{
 }
 
 .nav-link{
-    color:#A4A48C;
+    color:#FAECD6;
     font-family: "Montserrat-Light";
     font-size: 1.5625rem;
 }
@@ -27,7 +34,7 @@ pour 70px ==> 70/16=4.375rem : "r" correspond à root donc même si on modifie l
 texte dans body par, la taille h1 ne sera pas modifiée*/
 
 .nav-link:hover{
-    color:#DDC38B;
+    color:#E9E8E8;
 }
 
 .nav-link:active{
@@ -45,7 +52,7 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
 /*Title*/
 
 #title{
-    background-color: #FAECD6;
+    /*background-color: #FAECD6;*/
     color:#820000;
 }
 
@@ -68,10 +75,21 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
 
 .btn-style-1{
     margin:5% 3% 0 12%;
+    background-color: #A7727D;
+}
+
+.btn-style-1:hover{
+    background-color: #d493a1;
 }
 
 .btn-style-2{
     margin:5% 3% 0 3%;
+    border-color:#A7727D;
+    color:#820000;
+}
+
+.btn-style-2:hover{
+    background-color: #A7727D;
 }
 
 /*Title image*/
@@ -79,6 +97,28 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
 .title-img{
     width:60%;
     margin:40px auto 40px 60px;
+}
+
+.diagonal_title{
+    --skew-angle: 5deg;
+    --background: linear-gradient(
+        45deg,
+        #FAECD6,
+        #d493a1,
+        #820000
+    );
+    position: relative;
+    isolation: isolate;
+    padding-block:1.5625rem;
+}
+
+.diagonal_title::after{
+    content: '';
+    background-image: var(--background);
+    position:absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(var(--skew-angle));
 }
 
 /*Features*/
@@ -106,4 +146,55 @@ texte dans body par, la taille h1 ne sera pas modifiée*/
 
 .p-features{
     color:#4E6C50;
+}
+
+/*Testimonials*/
+#testimonials{
+    text-align:center;
+    /*background-color: #820000;*/
+    color: white;
+}
+
+.diagonal{
+    --skew-angle: 5deg;
+    --background: linear-gradient(
+        45deg,
+        #FAECD6,
+        #d493a1,
+        #820000
+    );
+
+    position: relative;
+    isolation: isolate;
+}
+
+.diagonal::after{
+    content: '';
+    background-image: var(--background);
+    position:absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+}
+
+.testimonial-img{
+    width:40%;
+    border-radius: 5%;
+    margin: 1.25rem;
+}
+
+.carousel-item{
+    padding: 5% 10%;
+}
+
+/*Press*/
+#press{
+    /*background-color: #820000;*/
+    text-align: center;
+    padding-bottom: 3%; 
+}
+
+.press-logo{
+    width:8%;
+    margin: 1.25rem 1.25rem 3.125rem;
 }
